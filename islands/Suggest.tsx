@@ -48,11 +48,18 @@ export default function Suggest(props: suggestProps) {
       <div class="px-4 py-8 mx-auto">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <div class={"flex flex-col items-center space-y-12"}>
-            <div class="text-2xl font-bold">{props.cake}</div>
-            <div>
-              <h3 class="text-xl font-bold">With</h3>
-            </div>
-            <div class="text-2xl font-bold">{props.food}</div>
+            {props.cake.value.length
+              ? (
+                <div class={"flex flex-col items-center space-y-12"}>
+                  <div class="text-2xl font-bold">{props.cake}</div>
+                  <div>
+                    <h3 class="text-xl font-bold">With</h3>
+                  </div>
+                  <div class="text-2xl font-bold">{props.food}</div>
+                </div>
+              )
+              : ""}
+
             <div>
               <button
                 onClick={suggest}

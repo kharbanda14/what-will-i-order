@@ -2,8 +2,8 @@ import { useSignal } from "@preact/signals";
 import Suggest from "../islands/Suggest.tsx";
 
 export default function Home() {
-  const cake = useSignal("Randomize");
-  const food = useSignal("Randomize");
+  const cake = useSignal("");
+  const food = useSignal("");
 
   return (
     <div>
