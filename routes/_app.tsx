@@ -5,7 +5,8 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>order-randomizer</title>
+        <title>What will I order?</title>
+        <meta name="description" content="Order Suggestion for lazy people." />
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
